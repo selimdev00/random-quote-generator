@@ -6,10 +6,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-<h1>hello world</h1>
+    <div class="quote__wrapper">
+        <div class="quote__box">
+            <div class="quote__box__icon__wrapper">
+                <picture>
+                    <source
+                            srcset="./assets/images/quote-pink.svg"
+                    />
+                    <img
+                            class="quote__box__icon"
+                            src="./assets/images/quote-pink.svg"
+                            alt="Quote icon"
+                    >
+                </picture>
+            </div>
+
+            <div class="quote__box__text">
+                <p>
+                    It is only with the heart that
+                    one can see rightly, what is
+                    essential is invisible to the
+                    eye.
+                </p>
+            </div>
+
+            <div class="quote__box__divider"></div>
+
+            <div class="quote__box__author">
+                <h2>Antoine de Saint-Exupery</h2>
+            </div>
+
+            <div class="quote__box__panel">
+                <div class="quote__box__panel__twitter quote__box__panel__item">
+                    <img src="./assets/images/twitter.svg" alt="">
+                </div>
+
+                <button class="quote__box__panel__button quote__box__panel__item">
+                    New Quote
+                </button>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

@@ -1,7 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* write your CSS here */
+:root {
+  --quote-box-bg-color: rgba(223, 219, 229, 0.50);
+  --primary-color: #364BA7;
+  --secondary-color: #F583A7 ;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+}
+
+.quote__wrapper {
+  min-height: 100vh;
+  background-image: url("./assets/images/bg.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.quote__box {
+  background-color: var(--quote-box-bg-color);
+  width: 1009px;
+  height: 673px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+  padding: 20px 60px;
+}
+.quote__box__icon {
+  content-visibility: auto;
+}
+.quote__box__icon__wrapper {
+  display: flex;
+  justify-content: center;
+}
+.quote__box__text p {
+  color: var(--primary-color);
+  text-align: center;
+  font-size: 56px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: normal;
+  padding: 18px 100px;
+}
+.quote__box__divider {
+  width: 680.008px;
+  height: 1px;
+  background: var(--primary-color);
+  margin: 4px auto;
+}
+.quote__box__author h2 {
+  color: var(--secondary-color);
+  text-align: center;
+  font-size: 48px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 20px;
+}
+.quote__box__panel {
+  margin-top: 20px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.quote__box__panel__item {
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 150ms;
+}
+.quote__box__panel__item:hover {
+  opacity: 0.5;
+}
+.quote__box__panel__button {
+  border-radius: 10px;
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  font-family: Roboto, sans-serif;
+  text-align: center;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 20px 25px;
+  border: none;
+}
+
+/*# sourceMappingURL=style.css.map */
