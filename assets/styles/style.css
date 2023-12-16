@@ -17,7 +17,7 @@ body {
 
 .quote__wrapper {
   min-height: 100vh;
-  background-image: url("./assets/images/bg.png");
+  background-image: url("../images/bg.png");
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,6 +53,10 @@ body {
 .quote__box__icon__wrapper {
   display: flex;
   justify-content: center;
+}
+.quote__box__text {
+  max-height: 320px;
+  overflow: auto;
 }
 .quote__box__text p {
   color: var(--primary-color);

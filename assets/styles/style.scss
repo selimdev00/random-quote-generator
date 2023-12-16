@@ -19,7 +19,7 @@ body {
 .quote {
   &__wrapper {
     min-height: 100vh;
-    background-image: url("./assets/images/bg.png");
+    background-image: url("../images/bg.png");
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,6 +68,9 @@ body {
     }
 
     &__text {
+      max-height: 320px;
+      overflow: auto;
+
       p {
         color: var(--primary-color);
         text-align: center;
