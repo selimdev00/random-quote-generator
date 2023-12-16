@@ -31,6 +31,32 @@ body {
     border-radius: 10px;
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
     padding: 20px 60px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    &__content {
+      display: block;
+    }
+
+    &__loading {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      display: none;
+    }
+
+    &.is-loading {
+      .quote__box {
+        &__content {
+          display: none;
+        }
+
+        &__loading {
+          display: flex;
+        }
+      }
+    }
 
     &__icon {
       content-visibility: auto;
@@ -84,7 +110,7 @@ body {
         opacity: 1;
         transition: opacity 150ms;
 
-        &:hover {
+        &:hover, &:disabled {
           opacity: 0.5;
         }
       }

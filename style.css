@@ -28,6 +28,24 @@ body {
   border-radius: 10px;
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
   padding: 20px 60px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.quote__box__content {
+  display: block;
+}
+.quote__box__loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+.quote__box.is-loading .quote__box__content {
+  display: none;
+}
+.quote__box.is-loading .quote__box__loading {
+  display: flex;
 }
 .quote__box__icon {
   content-visibility: auto;
@@ -72,7 +90,7 @@ body {
   opacity: 1;
   transition: opacity 150ms;
 }
-.quote__box__panel__item:hover {
+.quote__box__panel__item:hover, .quote__box__panel__item:disabled {
   opacity: 0.5;
 }
 .quote__box__panel__button {

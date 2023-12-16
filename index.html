@@ -11,7 +11,7 @@
 
 <body>
     <div class="quote__wrapper">
-        <div class="quote__box">
+        <div id="quote-box" class="quote__box">
             <div class="quote__box__icon__wrapper">
                 <picture>
                     <source
@@ -25,15 +25,21 @@
                 </picture>
             </div>
 
-            <div class="quote__box__text">
-                <p id="quote-text">
-                </p>
+            <div class="quote__box__loading quote__box__text">
+                <p>Loading...</p>
             </div>
 
-            <div class="quote__box__divider"></div>
+            <div class="quote__box__content">
+                <div class="quote__box__text">
+                    <p id="quote-text">
+                    </p>
+                </div>
 
-            <div class="quote__box__author">
-                <h2 id="quote-author">Antoine de Saint-Exupery</h2>
+                <div class="quote__box__divider"></div>
+
+                <div class="quote__box__author">
+                    <h2 id="quote-author">Antoine de Saint-Exupery</h2>
+                </div>
             </div>
 
             <div class="quote__box__panel">
